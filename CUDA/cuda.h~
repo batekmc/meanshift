@@ -1,0 +1,17 @@
+
+#define grid	    16
+#define halfGrid	8
+/**
+ * x- xrozmer obr.
+ * y -yrozmer obr.
+ * radius- polomer zpracovavaneho okna
+ * radius E2 - polomer*polomer
+ * colorDiff - maximalni pripustny rozdil barev
+ */
+struct Hodnoty{
+	int x,y,radius, radiusE2, colorDiff;
+
+};
+
+//vraci cas provadeni kernelu v milsec
+float mainCu( unsigned char *img, unsigned char *result, Hodnoty *c );
